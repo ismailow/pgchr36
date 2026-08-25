@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Представитель Главы Чеченской Республики в Воронежской области — Исраилов Руслан Султанович.">
+  <title>Представитель Главы ЧР в Воронежской области</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header" id="top">
+  <div class="container header__inner">
+    <a class="brand" href="#top" aria-label="На главную">
+      <span class="brand__mark"><img src="gerb-chr.png" alt="Герб Чеченской Республики"></span>
+      <span class="brand__text">
+        <strong>Представительство<br>Главы ЧР</strong>
+        <small>Воронежская область</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav">
+      <a href="#about">О представительстве</a>
+      <a href="#representative">Представитель</a>
+      <a href="#directions">Деятельность</a>
+      <a href="#contacts">Контакты</a>
+      <a class="nav__button" href="#contact-form">Обратиться</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero__texture"></div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <!-- <p class="eyebrow">ЧЕЧЕНСКАЯ РЕСПУБЛИКА · ВОРОНЕЖСКАЯ ОБЛАСТЬ</p> -->
+        <h1>Представитель Главы<br>Чеченской Республики<br><em>в Воронежской области</em></h1>
+        <p class="hero__lead">Представительство содействует развитию межрегионального сотрудничества, взаимодействию организаций и укреплению деловых, культурных и гуманитарных связей.</p>
+        <div class="hero__actions">
+          <a class="button button--gold" href="#representative">О представителе</a>
+          <a class="button button--ghost" href="#contact-form">Написать обращение</a>
+        </div>
+      </div>
+    </div>
+    <a class="scroll-down" href="#about">↓</a>
+  </section>
+
+  <section class="intro section" id="about">
+    <div class="container intro__grid">
+      <div>
+        <p class="eyebrow eyebrow--dark">О ПРЕДСТАВИТЕЛЬСТВЕ</p>
+        <h2>Связь между регионами.<br><span>Общие задачи. Общие возможности.</span></h2>
+      </div>
+      <div class="intro__text">
+        <p>Представитель Главы Чеченской Республики в Воронежской области обеспечивает взаимодействие с органами власти, организациями, предпринимателями и общественными объединениями региона.</p>
+        <p>Работа представительства направлена на развитие межрегиональных связей, содействие деловому и гуманитарному сотрудничеству, а также рассмотрение обращений граждан.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="representative section section--soft" id="representative">
+    <div class="container representative__grid">
+      <div class="portrait">
+        <img src="ruslan-israilov.jpg" alt="Исраилов Руслан Султанович">
+      </div>
+      <div class="representative__content">
+        <p class="eyebrow eyebrow--dark">ПРЕДСТАВИТЕЛЬ</p>
+        <h2>Исраилов<br><span>Руслан Султанович</span></h2>
+        <p class="position">Представитель Главы Чеченской Республики в Воронежской области</p>
+        <div class="gold-line"></div>
+        <p>Официальное представительство Главы Чеченской Республики в Воронежской области.</p>
+        <a class="text-link" href="#contacts">Контактная информация <span>→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="directions section" id="directions">
+    <div class="container">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow eyebrow--dark">ОСНОВНЫЕ НАПРАВЛЕНИЯ</p>
+          <h2>Деятельность<br><span>представительства</span></h2>
+        </div>
+        <p>Работа строится вокруг практического взаимодействия между Чеченской Республикой и Воронежской областью.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><span class="card__num">01</span><h3>Межрегиональное сотрудничество</h3><p>Содействие развитию деловых и общественных связей между регионами.</p></article>
+        <article class="card"><span class="card__num">02</span><h3>Деловое взаимодействие</h3><p>Контакты с организациями, предпринимателями и представителями деловых кругов.</p></article>
+        <article class="card"><span class="card__num">03</span><h3>Культурные и гуманитарные связи</h3><p>Поддержка взаимодействия в общественной, культурной и гуманитарной сферах.</p></article>
+        <article class="card"><span class="card__num">04</span><h3>Работа с обращениями</h3><p>Приём и рассмотрение обращений граждан и организаций по вопросам деятельности представительства.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="appeal section" id="contact-form">
+    <div class="container appeal__grid">
+      <div>
+        <p class="eyebrow">ОБРАЩЕНИЕ</p>
+        <h2>Есть вопрос?<br><em>Свяжитесь с представительством.</em></h2>
+      </div>
+      <form class="form" id="appealForm">
+        <label>Ваше имя<input type="text" name="name" placeholder="ФИО" required></label>
+        <div class="form__row">
+          <label>Телефон<input type="tel" name="phone" placeholder="+7 (___) ___-__-__"></label>
+          <label>E-mail<input type="email" name="email" placeholder="example@mail.ru" required></label>
+        </div>
+        <label>Тема обращения<input type="text" name="subject" placeholder="Укажите тему" required></label>
+        <label>Текст обращения<textarea name="message" rows="5" placeholder="Введите текст обращения" required></textarea></label>
+        <label class="check"><input type="checkbox" required> <span>Согласен на обработку персональных данных</span></label>
+        <button class="button button--gold button--full" type="submit">Отправить обращение</button>
+        <p class="form__notice" id="formNotice"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="contacts section" id="contacts">
+    <div class="container contacts__grid">
+      <div>
+        <p class="eyebrow eyebrow--dark">КОНТАКТЫ</p>
+        <h2>Представительство<br><span>в Воронежской области</span></h2>
+        <div class="contact-list">
+          <div><small>ПРЕДСТАВИТЕЛЬ</small><strong>Исраилов Руслан Султанович</strong></div>
+          <div><small>ТЕЛЕФОН ПРЕДСТАВИТЕЛЯ</small><a href="tel:+79204129505">+7 (920) 412-95-05</a></div>
+          <div><small>ЗАМЕСТИТЕЛЬ ПРЕДСТАВИТЕЛЯ</small><strong>Исраилов Ахмед Русланович</strong></div>
+          <div><small>ТЕЛЕФОН ЗАМЕСТИТЕЛЯ</small><a href="tel:+79951466707">+7 (995) 146-67-07</a></div>
+          <div><small>АДРЕС</small><strong>394088, г. Воронеж,<br>ул. Антонова-Овсеенко, д. 29, офис 1</strong></div>
+        </div>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?mode=search&text=%D0%92%D0%BE%D1%80%D0%BE%D0%BD%D0%B5%D0%B6%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%90%D0%BD%D1%82%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0-%D0%9E%D0%B2%D1%81%D0%B5%D0%B5%D0%BD%D0%BA%D0%BE%2C%2029"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          allowfullscreen="true"
+          title="Яндекс Карта — Воронеж, улица Антонова-Овсеенко, 29">
+        </iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div><strong>Представительство Главы ЧР</strong><span>В Воронежской области</span></div>
+    <p>© 2026. Официальный информационный ресурс.</p>
+    <a href="#top">Наверх ↑</a>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
