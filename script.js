@@ -35,3 +35,15 @@ form?.addEventListener('submit',e=>{
   e.preventDefault();
   notice.textContent='Форма работает в демонстрационном режиме. Для отправки обращений подключим серверную обработку.';
 });
+
+// Фотогалерея
+const galleryModal=document.getElementById('galleryModal');
+const galleryModalImage=document.getElementById('galleryModalImage');
+const galleryClose=galleryModal?.querySelector('.gallery-modal__close');
+const galleryItems=document.querySelectorAll('[data-gallery]');
+function openGallery(src){if(!galleryModal||!galleryModalImage)return;galleryModalImage.src=src;galleryModal.classList.add('is-open');galleryModal.setAttribute('aria-hidden','false');document.body.classList.add('gallery-lock');}
+function closeGallery(){if(!galleryModal)return;galleryModal.classList.remove('is-open');galleryModal.setAttribute('aria-hidden','true');document.body.classList.remove('gallery-lock');setTimeout(()=>{if(!galleryModal.classList.contains('is-open'))galleryModalImage.src=''},250);}
+galleryItems.forEach(item=>item.addEventListener('click',()=>openGallery(item.dataset.gallery)));
+galleryClose?.addEventListener('click',closeGallery);
+galleryModal?.addEventListener('click',e=>{if(e.target===galleryModal)closeGallery()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&galleryModal?.classList.contains('is-open'))closeGallery()});

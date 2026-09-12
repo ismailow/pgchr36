@@ -29,6 +29,7 @@
       <a href="#about">О представительстве</a>
       <a href="#representative">Представитель</a>
       <a href="#directions">Деятельность</a>
+      <a href="#gallery">Фотогалерея</a>
       <a href="#contacts">Контакты</a>
       <a class="nav__button" href="#contact-form">Обратиться</a>
     </nav>
@@ -100,12 +101,48 @@
     </div>
   </section>
 
+  <section class="gallery section section--soft" id="gallery">
+    <div class="container">
+      <div class="section-heading gallery__heading">
+        <div>
+          <p class="eyebrow eyebrow--dark">ФОТОГАЛЕРЕЯ</p>
+          <h2>Встречи и<br><span>мероприятия</span></h2>
+        </div>
+        <p>Фотографии с рабочих встреч и мероприятий представительства.</p>
+      </div>
+
+      <div class="gallery__grid">
+        <button class="gallery__item gallery__item--portrait" type="button" data-gallery="photo-meeting-1.jpg" aria-label="Открыть фотографию">
+          <img src="photo-meeting-1.jpg" alt="Фотография с рабочей встречи" loading="lazy">
+          <span class="gallery__overlay"><b>Открыть фото</b><i>↗</i></span>
+        </button>
+        <button class="gallery__item gallery__item--wide" type="button" data-gallery="photo-meeting-2.jpg" aria-label="Открыть фотографию">
+          <img src="photo-meeting-2.jpg" alt="Фотография с рабочей встречи" loading="lazy">
+          <span class="gallery__overlay"><b>Открыть фото</b><i>↗</i></span>
+        </button>
+        <button class="gallery__item gallery__item--wide" type="button" data-gallery="photo-meeting-3.jpg" aria-label="Открыть фотографию">
+          <img src="photo-meeting-3.jpg" alt="Фотография с рабочей встречи" loading="lazy">
+          <span class="gallery__overlay"><b>Открыть фото</b><i>↗</i></span>
+        </button>
+        <button class="gallery__item gallery__item--wide" type="button" data-gallery="photo-meeting-4.jpg" aria-label="Открыть фотографию">
+          <img src="photo-meeting-4.jpg" alt="Фотография с рабочей встречи" loading="lazy">
+          <span class="gallery__overlay"><b>Открыть фото</b><i>↗</i></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="gallery-modal" id="galleryModal" aria-hidden="true">
+    <button class="gallery-modal__close" type="button" aria-label="Закрыть">×</button>
+    <img class="gallery-modal__image" id="galleryModalImage" src="" alt="">
+  </div>
+
   <section class="appeal section" id="contact-form">
     <div class="container appeal__grid">
       <div>
         <p class="eyebrow">ОБРАЩЕНИЕ</p>
         <h2>Есть вопрос?<br><em>Свяжитесь с представительством.</em></h2>
-        <!-- <p>Используйте форму для отправки обращения. После подключения серверной части сообщения будут поступать ответственному сотруднику.</p> -->
+        <p>Используйте форму для отправки обращения. После подключения серверной части сообщения будут поступать ответственному сотруднику.</p>
       </div>
       <form class="form" id="appealForm">
         <label>Ваше имя<input type="text" name="name" placeholder="ФИО" required></label>
